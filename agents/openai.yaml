@@ -1,0 +1,4 @@
+interface:
+  display_name: "IEEE Research Skills"
+  short_description: "本地可追溯的 IEEE 研究、写作与审阅工作流。"
+  default_prompt: "Use $ieee-research-skills to create or open an IEEE research project and start its next confirmed deliverable."

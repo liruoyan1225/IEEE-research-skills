@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "project": {"name": "", "scope": "", "target_venue": ""},
+  "current": {"node": "", "deliverable": "", "status": "proposed"},
+  "style_profile": {"default": "吕老师", "status": "confirmed"},
+  "pending_confirmations": [],
+  "confirmed_decisions": [],
+  "trace_links": [],
+  "versions": [],
+  "blockers": []
+}
