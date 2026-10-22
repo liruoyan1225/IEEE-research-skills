@@ -18,7 +18,7 @@ Read the relevant reference before work:
 | Request | Read first |
 |---|---|
 | Any node or handoff | `references/workflow.md` |
-| Advisor-style writing or corpus update | `references/style-profile.md` |
+| IEEE journal-style writing or corpus update | `references/style-profile.md`, then `references/ieee-journal-style-corpus.md` |
 | Literature, model, derivation, simulation, or results | `references/technical-integrity.md` |
 | Manuscript, LaTeX, annotations, review, or submission | `references/ieee-typesetting-and-review.md` |
 | Project setup or workbench integration | `references/workbench-contract.md` |
@@ -51,11 +51,11 @@ Follow this graph: `调研 → 研究文档 → 仿真 ↔ 论文撰写 → 初�
 - For every simulation conclusion, retain the code version, configuration, random seed policy, baselines, metrics, result files, and a claim-to-figure link. Do not treat runtime as algorithmic complexity unless the user specifically asks for timing; use the requested theoretical operation-count convention when applicable.
 - Surface uncertainty and blocking evidence gaps before suggesting implementation or prose.
 
-## Writing and advisor-style profile
+## Writing and IEEE journal style profile
 
-Use `吕老师风格档案.md` as the default profile when present. Match its observable, confirmed conventions—argument order, paragraph function, definition placement, equation presentation, transition density, and directness—without copying distinctive sentences or claiming to reproduce a person's exact voice.
+Use `IEEE期刊写作风格档案.md` as the default profile when present. Apply the transferable conventions distilled in `references/style-profile.md` from the representative IEEE corpus registered in `references/ieee-journal-style-corpus.md`: argument order, paragraph function, definition placement, equation presentation, claim strength, algorithm explanation, and evidence-to-figure linkage. Do not imitate a single author, copy distinctive sentences, or claim that an inferred convention is an official IEEE requirement.
 
-When new advisor papers, annotations, or exemplar papers arrive, create a candidate-rule record with source location, frequency/contrast evidence, scope, and proposed wording. Update the default profile only after user confirmation.
+When new papers, annotations, or exemplar materials arrive, create a candidate-rule record with a stable source identifier, precise location, frequency/contrast evidence, scope, and proposed wording. Prefer publisher metadata and DOI records; do not add copyrighted full text to the repository. Update the default profile only after cross-paper comparison and user confirmation.
 
 For manuscript work, communicate in Chinese unless the user requests another language. Produce IEEE manuscript prose in the manuscript language. Preserve existing `\cite{}` and `\bibitem` labels. If a rewritten paragraph contains citations, provide the complete matching IEEE-style `\bibitem` entries requested by the user; never fabricate bibliographic metadata. Keep formulas in LaTeX and explain formula edits through definitions and validity, not stylistic claims alone.
 

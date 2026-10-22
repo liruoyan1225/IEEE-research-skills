@@ -11,7 +11,7 @@ Keep user-readable Markdown as the canonical working record and `project_index.j
   "schema_version": "1.0",
   "project": {"name": "", "scope": "", "target_venue": ""},
   "current": {"node": "", "deliverable": "", "status": "proposed"},
-  "style_profile": {"default": "吕老师", "status": "confirmed"},
+  "style_profile": {"default": "IEEE代表性期刊语料", "status": "confirmed", "source": "工作台索引/IEEE期刊写作风格档案.md"},
   "pending_confirmations": [],
   "confirmed_decisions": [],
   "trace_links": [],

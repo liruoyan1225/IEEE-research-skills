@@ -129,7 +129,7 @@ Skill 会按以下顺序返回：
 │  ├─ 项目总览.md
 │  ├─ 当前状态.md
 │  ├─ 确认记录.md
-│  └─ 吕老师风格档案.md
+│  └─ IEEE期刊写作风格档案.md
 ├─ 1_调研/
 │  └─ 调研证据卡.md
 ├─ 2_研究文档/
@@ -154,7 +154,7 @@ Skill 不会把所有规则一次性塞入上下文，而是根据当前任务�
 | 当前任务 | 读取的规则 |
 |---|---|
 | 阶段切换、交付和回退 | [`references/workflow.md`](references/workflow.md) |
-| 导师风格分析与更新 | [`references/style-profile.md`](references/style-profile.md) |
+| IEEE 期刊写作风格与语料维护 | [`references/style-profile.md`](references/style-profile.md)、[`references/ieee-journal-style-corpus.md`](references/ieee-journal-style-corpus.md) |
 | 文献、模型、推导、仿真和结果 | [`references/technical-integrity.md`](references/technical-integrity.md) |
 | 稿件、LaTeX、批注、审阅和投稿 | [`references/ieee-typesetting-and-review.md`](references/ieee-typesetting-and-review.md) |
 | 项目建立与工作台集成 | [`references/workbench-contract.md`](references/workbench-contract.md) |
@@ -165,7 +165,7 @@ flowchart TD
     S --> T{任务类型}
     T -->|研究完整性| A[technical-integrity.md]
     T -->|写作与投稿| B[ieee-typesetting-and-review.md]
-    T -->|导师风格| C[style-profile.md]
+    T -->|IEEE 期刊写作风格| C[style-profile.md]
     T -->|阶段与交付| D[workflow.md]
     T -->|项目索引| E[workbench-contract.md]
     A & B & C & D & E --> O[带证据、风险与确认项的交付物]
@@ -177,7 +177,7 @@ flowchart TD
 - **交付物级确认**：每个节点都说明输入、假设、拟交付内容、风险和需要确认的决定。
 - **不补造证据**：不虚构文献覆盖、研究缺口、参数、基线、结果、引文或实现状态。
 - **结论可复查**：仿真结论保留代码版本、配置、随机种子策略、指标和结果文件。
-- **风格从证据中学习**：导师写作规则需要来源与对比证据，确认后才进入默认风格档案。
+- **风格从公开语料中学习**：写作规则由多篇 IEEE 代表性期刊论文交叉归纳，并保留 DOI、适用范围和证据映射。
 
 ## 适用范围
 
@@ -205,11 +205,11 @@ IEEE-research-skills/
 └─ README.md                    # 项目介绍与使用指南
 ```
 
-## 关于导师风格档案
+## 关于 IEEE 期刊写作风格档案
 
-项目模板包含 `吕老师风格档案.md`，用于记录可观察、可确认的写作习惯，例如论证顺序、段落功能、定义位置、公式呈现和表达直接性。它不会复制个人的独特句子，也不会声称精确复现某个人的声音。
+项目模板包含 `IEEE期刊写作风格档案.md`。默认风格不是对单一作者的模仿，而是从 IEEE JSAC、TWC、TCOM、TSP、Communications Surveys & Tutorials 和 Proceedings of the IEEE 的代表性论文中，归纳可迁移的工程论文写作规则：问题如何收束、贡献如何对应研究缺口、变量何时定义、优化问题如何解释、算法如何交代收敛性，以及仿真结论如何连接图表证据。
 
-新的论文、批注或示例材料到来时，Skill 会先形成候选规则，并记录来源、出现频率、适用范围和建议表述。只有用户确认后，规则才进入默认档案。
+[`references/ieee-journal-style-corpus.md`](references/ieee-journal-style-corpus.md) 保存语料题录、DOI 和每篇论文的观察用途；[`references/style-profile.md`](references/style-profile.md) 保存蒸馏后的默认规则。新增论文只先形成带来源的候选规则，经过跨论文对照和用户确认后，才会改变默认风格。仓库不收录受版权保护的论文全文。
 
 ## License
 
