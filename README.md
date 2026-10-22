@@ -30,28 +30,9 @@
 
 ## 工作流总览
 
-```mermaid
-flowchart LR
-    A[1 调研<br/>文献证据与缺口验证] --> B[2 研究文档<br/>问题定义与模型推导]
-    B --> C[4 仿真<br/>配置、代码与结果证据]
-    C <--> D[3 论文撰写<br/>IEEE 稿件与 LaTeX]
-    D --> E[5 初稿修改<br/>导师批注与逐条处置]
-    E --> F[6 投稿<br/>一致性与可复现性检查]
-
-    W[(工作台索引)] -. 状态与确认记录 .-> A
-    W -.-> B
-    W -.-> C
-    W -.-> D
-    W -.-> E
-    W -.-> F
-
-    classDef research fill:#eff6ff,stroke:#2563eb,color:#172554;
-    classDef writing fill:#f5f3ff,stroke:#7c3aed,color:#2e1065;
-    classDef index fill:#ecfeff,stroke:#0891b2,color:#164e63;
-    class A,B,C research;
-    class D,E,F writing;
-    class W index;
-```
+<p align="center">
+  <img src="assets/workflow-overview.svg" alt="六阶段科研工作流：调研、研究文档、仿真、论文撰写、初稿修改与投稿；工作台索引贯穿全部阶段" width="100%" />
+</p>
 
 > 允许回退，但必须记录“改了什么”和“哪些内容需要重新检查”。
 
